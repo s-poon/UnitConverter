@@ -17,7 +17,7 @@ namespace BaseUnitLibrary {
         public double Fahrenhiet { get => _fahrenhiet; }
 
         // Constructor
-        Temperature(double input, Unit unit) {
+        public Temperature(double input, Unit unit) {
             switch (unit) {
                 case Unit.Kelvin:
                     this._kelvin = input;
