@@ -8,31 +8,23 @@ namespace BaseUnitLibrary {
     public class Temperature {
         // Members
         private double _kelvin;
-        private double _celsius;
-        private double _fahrenhiet;
 
         // Properties
         public double Kelvin { get => _kelvin; }
-        public double Celsius { get => _celsius; }
-        public double Fahrenhiet { get => _fahrenhiet; }
+        public double Celsius { get => KelvinToCelsius(_kelvin); }
+        public double Fahrenhiet { get => KelvinToFahrenheit(_kelvin); }
 
         // Constructor
-        public Temperature(double input, Unit unit) {
+        public Temperature(double input, TemperatureUnits unit) {
             switch (unit) {
-                case Unit.Kelvin:
+                case TemperatureUnits.Kelvin:
                     this._kelvin = input;
-                    this._celsius = KelvinToCelsius(input);
-                    this._fahrenhiet = KelvinToFahrenheit(input);
                     break;
-                case Unit.Celsius:
+                case TemperatureUnits.Celsius:
                     this._kelvin = CelsiusToKelvin(input);
-                    this._celsius = input;
-                    this._fahrenhiet = CelsiusToKelvin(KelvinToFahrenheit(input));
                     break;
-                case Unit.Fahrenheit:
+                case TemperatureUnits.Fahrenheit:
                     this._kelvin = FahrenheitToKelvin(input);
-                    this._celsius = FahrenheitToKelvin(KelvinToCelsius(input));
-                    this._fahrenhiet = input;
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(unit));
@@ -41,10 +33,15 @@ namespace BaseUnitLibrary {
 
         // Methods
         private double KelvinToCelsius(double kelvin) { return kelvin - 273.15; }
-        private double KelvinToFahrenheit(double kelvin) { return 1.8 * (kelvin - 273) + 32; }
-        private double CelsiusToKelvin(double celsius) { return celsius - 273.15; }
-        private double FahrenheitToKelvin(double fahrenheit) { return 5 / 9 * (fahrenheit + 459.67);  }
+        private double KelvinToFahrenheit(double kelvin) { return 1.8 * (kelvin - 273.15) + 32; }
+        private double CelsiusToKelvin(double celsius) { return celsius + 273.15; }
+        private double FahrenheitToKelvin(double fahrenheit) { return (fahrenheit + 459.67) * 5 / 9; }
+
         // Enum
-        
+        public enum TemperatureUnits {
+            Celsius,
+            Kelvin,
+            Fahrenheit
+        }
     }
 }
