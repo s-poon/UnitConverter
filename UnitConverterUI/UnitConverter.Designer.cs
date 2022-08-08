@@ -40,36 +40,75 @@ namespace UnitConverterUI {
             this.labelTempValue = new System.Windows.Forms.Label();
             this.labelTempUnit = new System.Windows.Forms.Label();
             this.tabTime = new System.Windows.Forms.TabPage();
-            this.labelTimeUnit = new System.Windows.Forms.Label();
-            this.comboBoxTimeUnit = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxMinutes = new System.Windows.Forms.TextBox();
+            this.textBoxYears = new System.Windows.Forms.TextBox();
+            this.labelMinutes = new System.Windows.Forms.Label();
+            this.labelYears = new System.Windows.Forms.Label();
+            this.textBoxDays = new System.Windows.Forms.TextBox();
+            this.textBoxHours = new System.Windows.Forms.TextBox();
+            this.textBoxSeconds = new System.Windows.Forms.TextBox();
+            this.labelDays = new System.Windows.Forms.Label();
+            this.labelHours = new System.Windows.Forms.Label();
+            this.labelSeconds = new System.Windows.Forms.Label();
+            this.textBoxMilli = new System.Windows.Forms.TextBox();
+            this.textBoxMicro = new System.Windows.Forms.TextBox();
+            this.textBoxNanoseconds = new System.Windows.Forms.TextBox();
             this.textBoxTimeInput = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.buttonConvertTime = new System.Windows.Forms.Button();
+            this.labelMilliseconds = new System.Windows.Forms.Label();
+            this.labelMicroseconds = new System.Windows.Forms.Label();
+            this.labelNano = new System.Windows.Forms.Label();
             this.labelTimeValue = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.comboBoxTimeUnit = new System.Windows.Forms.ComboBox();
+            this.labelTimeUnit = new System.Windows.Forms.Label();
+            this.tabDistance = new System.Windows.Forms.TabPage();
+            this.textBoxFeetInch = new System.Windows.Forms.TextBox();
+            this.labelFeetInch = new System.Windows.Forms.Label();
+            this.textBoxMile = new System.Windows.Forms.TextBox();
+            this.labelMiles = new System.Windows.Forms.Label();
+            this.textBoxNauticalMile = new System.Windows.Forms.TextBox();
+            this.textBoxYard = new System.Windows.Forms.TextBox();
+            this.labelNauticalMile = new System.Windows.Forms.Label();
+            this.labelYard = new System.Windows.Forms.Label();
+            this.textBoxFeet = new System.Windows.Forms.TextBox();
+            this.textBoxInch = new System.Windows.Forms.TextBox();
+            this.textBoxMil = new System.Windows.Forms.TextBox();
+            this.labelFeet = new System.Windows.Forms.Label();
+            this.labelInch = new System.Windows.Forms.Label();
+            this.labelMil = new System.Windows.Forms.Label();
+            this.labelInchIn = new System.Windows.Forms.Label();
+            this.labelFeetIn = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBoxMeter = new System.Windows.Forms.TextBox();
+            this.labelMeter = new System.Windows.Forms.Label();
+            this.textBoxLightYear = new System.Windows.Forms.TextBox();
+            this.textBoxKilometer = new System.Windows.Forms.TextBox();
+            this.textBoxCentimeter = new System.Windows.Forms.TextBox();
+            this.labelLightYear = new System.Windows.Forms.Label();
+            this.labelKilometer = new System.Windows.Forms.Label();
+            this.labelCentimeter = new System.Windows.Forms.Label();
+            this.textBoxMillimeter = new System.Windows.Forms.TextBox();
+            this.textBoxMicrometer = new System.Windows.Forms.TextBox();
+            this.textBoxNanometer = new System.Windows.Forms.TextBox();
+            this.textBoxDistanceInput = new System.Windows.Forms.TextBox();
+            this.buttonConvertDistance = new System.Windows.Forms.Button();
+            this.labelMillisecond = new System.Windows.Forms.Label();
+            this.labelMicrometer = new System.Windows.Forms.Label();
+            this.labelNanometer = new System.Windows.Forms.Label();
+            this.labelDistanceInput = new System.Windows.Forms.Label();
+            this.comboBoxDistanceUnit = new System.Windows.Forms.ComboBox();
+            this.labelDistanceUnit = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabTemperature.SuspendLayout();
             this.tabTime.SuspendLayout();
+            this.tabDistance.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl
             // 
             this.tabControl.Controls.Add(this.tabTemperature);
             this.tabControl.Controls.Add(this.tabTime);
+            this.tabControl.Controls.Add(this.tabDistance);
             this.tabControl.Location = new System.Drawing.Point(12, 12);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -193,24 +232,24 @@ namespace UnitConverterUI {
             // 
             // tabTime
             // 
-            this.tabTime.Controls.Add(this.textBox8);
-            this.tabTime.Controls.Add(this.textBox9);
-            this.tabTime.Controls.Add(this.label8);
-            this.tabTime.Controls.Add(this.label9);
-            this.tabTime.Controls.Add(this.textBox5);
-            this.tabTime.Controls.Add(this.textBox6);
-            this.tabTime.Controls.Add(this.textBox7);
-            this.tabTime.Controls.Add(this.label5);
-            this.tabTime.Controls.Add(this.label6);
-            this.tabTime.Controls.Add(this.label7);
-            this.tabTime.Controls.Add(this.textBox1);
-            this.tabTime.Controls.Add(this.textBox2);
-            this.tabTime.Controls.Add(this.textBox3);
+            this.tabTime.Controls.Add(this.textBoxMinutes);
+            this.tabTime.Controls.Add(this.textBoxYears);
+            this.tabTime.Controls.Add(this.labelMinutes);
+            this.tabTime.Controls.Add(this.labelYears);
+            this.tabTime.Controls.Add(this.textBoxDays);
+            this.tabTime.Controls.Add(this.textBoxHours);
+            this.tabTime.Controls.Add(this.textBoxSeconds);
+            this.tabTime.Controls.Add(this.labelDays);
+            this.tabTime.Controls.Add(this.labelHours);
+            this.tabTime.Controls.Add(this.labelSeconds);
+            this.tabTime.Controls.Add(this.textBoxMilli);
+            this.tabTime.Controls.Add(this.textBoxMicro);
+            this.tabTime.Controls.Add(this.textBoxNanoseconds);
             this.tabTime.Controls.Add(this.textBoxTimeInput);
-            this.tabTime.Controls.Add(this.button1);
-            this.tabTime.Controls.Add(this.label1);
-            this.tabTime.Controls.Add(this.label2);
-            this.tabTime.Controls.Add(this.label3);
+            this.tabTime.Controls.Add(this.buttonConvertTime);
+            this.tabTime.Controls.Add(this.labelMilliseconds);
+            this.tabTime.Controls.Add(this.labelMicroseconds);
+            this.tabTime.Controls.Add(this.labelNano);
             this.tabTime.Controls.Add(this.labelTimeValue);
             this.tabTime.Controls.Add(this.comboBoxTimeUnit);
             this.tabTime.Controls.Add(this.labelTimeUnit);
@@ -222,44 +261,106 @@ namespace UnitConverterUI {
             this.tabTime.Text = "Time";
             this.tabTime.UseVisualStyleBackColor = true;
             // 
-            // labelTimeUnit
+            // textBoxMinutes
             // 
-            this.labelTimeUnit.AutoSize = true;
-            this.labelTimeUnit.Location = new System.Drawing.Point(20, 15);
-            this.labelTimeUnit.Name = "labelTimeUnit";
-            this.labelTimeUnit.Size = new System.Drawing.Size(36, 20);
-            this.labelTimeUnit.TabIndex = 0;
-            this.labelTimeUnit.Text = "Unit";
-            this.labelTimeUnit.Click += new System.EventHandler(this.label1_Click);
+            this.textBoxMinutes.Location = new System.Drawing.Point(626, 331);
+            this.textBoxMinutes.Name = "textBoxMinutes";
+            this.textBoxMinutes.Size = new System.Drawing.Size(125, 27);
+            this.textBoxMinutes.TabIndex = 29;
             // 
-            // comboBoxTimeUnit
+            // textBoxYears
             // 
-            this.comboBoxTimeUnit.FormattingEnabled = true;
-            this.comboBoxTimeUnit.Location = new System.Drawing.Point(20, 38);
-            this.comboBoxTimeUnit.Name = "comboBoxTimeUnit";
-            this.comboBoxTimeUnit.Size = new System.Drawing.Size(151, 28);
-            this.comboBoxTimeUnit.TabIndex = 7;
+            this.textBoxYears.Location = new System.Drawing.Point(626, 557);
+            this.textBoxYears.Name = "textBoxYears";
+            this.textBoxYears.Size = new System.Drawing.Size(125, 27);
+            this.textBoxYears.TabIndex = 28;
             // 
-            // textBox1
+            // labelMinutes
             // 
-            this.textBox1.Location = new System.Drawing.Point(626, 182);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
-            this.textBox1.TabIndex = 19;
+            this.labelMinutes.AutoSize = true;
+            this.labelMinutes.Location = new System.Drawing.Point(626, 308);
+            this.labelMinutes.Name = "labelMinutes";
+            this.labelMinutes.Size = new System.Drawing.Size(61, 20);
+            this.labelMinutes.TabIndex = 27;
+            this.labelMinutes.Text = "Minutes";
             // 
-            // textBox2
+            // labelYears
             // 
-            this.textBox2.Location = new System.Drawing.Point(626, 108);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 27);
-            this.textBox2.TabIndex = 18;
+            this.labelYears.AutoSize = true;
+            this.labelYears.Location = new System.Drawing.Point(626, 534);
+            this.labelYears.Name = "labelYears";
+            this.labelYears.Size = new System.Drawing.Size(43, 20);
+            this.labelYears.TabIndex = 26;
+            this.labelYears.Text = "Years";
             // 
-            // textBox3
+            // textBoxDays
             // 
-            this.textBox3.Location = new System.Drawing.Point(626, 37);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(125, 27);
-            this.textBox3.TabIndex = 17;
+            this.textBoxDays.Location = new System.Drawing.Point(626, 483);
+            this.textBoxDays.Name = "textBoxDays";
+            this.textBoxDays.Size = new System.Drawing.Size(125, 27);
+            this.textBoxDays.TabIndex = 25;
+            // 
+            // textBoxHours
+            // 
+            this.textBoxHours.Location = new System.Drawing.Point(626, 409);
+            this.textBoxHours.Name = "textBoxHours";
+            this.textBoxHours.Size = new System.Drawing.Size(125, 27);
+            this.textBoxHours.TabIndex = 24;
+            // 
+            // textBoxSeconds
+            // 
+            this.textBoxSeconds.Location = new System.Drawing.Point(626, 254);
+            this.textBoxSeconds.Name = "textBoxSeconds";
+            this.textBoxSeconds.Size = new System.Drawing.Size(125, 27);
+            this.textBoxSeconds.TabIndex = 23;
+            // 
+            // labelDays
+            // 
+            this.labelDays.AutoSize = true;
+            this.labelDays.Location = new System.Drawing.Point(626, 460);
+            this.labelDays.Name = "labelDays";
+            this.labelDays.Size = new System.Drawing.Size(41, 20);
+            this.labelDays.TabIndex = 22;
+            this.labelDays.Text = "Days";
+            // 
+            // labelHours
+            // 
+            this.labelHours.AutoSize = true;
+            this.labelHours.Location = new System.Drawing.Point(626, 386);
+            this.labelHours.Name = "labelHours";
+            this.labelHours.Size = new System.Drawing.Size(48, 20);
+            this.labelHours.TabIndex = 21;
+            this.labelHours.Text = "Hours";
+            // 
+            // labelSeconds
+            // 
+            this.labelSeconds.AutoSize = true;
+            this.labelSeconds.Location = new System.Drawing.Point(626, 232);
+            this.labelSeconds.Name = "labelSeconds";
+            this.labelSeconds.Size = new System.Drawing.Size(64, 20);
+            this.labelSeconds.TabIndex = 20;
+            this.labelSeconds.Text = "Seconds";
+            // 
+            // textBoxMilli
+            // 
+            this.textBoxMilli.Location = new System.Drawing.Point(626, 182);
+            this.textBoxMilli.Name = "textBoxMilli";
+            this.textBoxMilli.Size = new System.Drawing.Size(125, 27);
+            this.textBoxMilli.TabIndex = 19;
+            // 
+            // textBoxMicro
+            // 
+            this.textBoxMicro.Location = new System.Drawing.Point(626, 108);
+            this.textBoxMicro.Name = "textBoxMicro";
+            this.textBoxMicro.Size = new System.Drawing.Size(125, 27);
+            this.textBoxMicro.TabIndex = 18;
+            // 
+            // textBoxNanoseconds
+            // 
+            this.textBoxNanoseconds.Location = new System.Drawing.Point(626, 37);
+            this.textBoxNanoseconds.Name = "textBoxNanoseconds";
+            this.textBoxNanoseconds.Size = new System.Drawing.Size(125, 27);
+            this.textBoxNanoseconds.TabIndex = 17;
             // 
             // textBoxTimeInput
             // 
@@ -268,41 +369,42 @@ namespace UnitConverterUI {
             this.textBoxTimeInput.Size = new System.Drawing.Size(125, 27);
             this.textBoxTimeInput.TabIndex = 16;
             // 
-            // button1
+            // buttonConvertTime
             // 
-            this.button1.Location = new System.Drawing.Point(428, 37);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Convert";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonConvertTime.Location = new System.Drawing.Point(428, 37);
+            this.buttonConvertTime.Name = "buttonConvertTime";
+            this.buttonConvertTime.Size = new System.Drawing.Size(94, 29);
+            this.buttonConvertTime.TabIndex = 15;
+            this.buttonConvertTime.Text = "Convert";
+            this.buttonConvertTime.UseVisualStyleBackColor = true;
+            this.buttonConvertTime.Click += new System.EventHandler(this.buttonConvertTime_Click);
             // 
-            // label1
+            // labelMilliseconds
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(626, 159);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 20);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Kelvin";
+            this.labelMilliseconds.AutoSize = true;
+            this.labelMilliseconds.Location = new System.Drawing.Point(626, 159);
+            this.labelMilliseconds.Name = "labelMilliseconds";
+            this.labelMilliseconds.Size = new System.Drawing.Size(91, 20);
+            this.labelMilliseconds.TabIndex = 14;
+            this.labelMilliseconds.Text = "Milliseconds";
             // 
-            // label2
+            // labelMicroseconds
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(626, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 20);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Fahrenheit";
+            this.labelMicroseconds.AutoSize = true;
+            this.labelMicroseconds.Location = new System.Drawing.Point(626, 85);
+            this.labelMicroseconds.Name = "labelMicroseconds";
+            this.labelMicroseconds.Size = new System.Drawing.Size(100, 20);
+            this.labelMicroseconds.TabIndex = 13;
+            this.labelMicroseconds.Text = "Microseconds";
             // 
-            // label3
+            // labelNano
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(626, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 20);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Celsius";
+            this.labelNano.AutoSize = true;
+            this.labelNano.Location = new System.Drawing.Point(626, 15);
+            this.labelNano.Name = "labelNano";
+            this.labelNano.Size = new System.Drawing.Size(98, 20);
+            this.labelNano.TabIndex = 12;
+            this.labelNano.Text = "Nanoseconds";
             // 
             // labelTimeValue
             // 
@@ -313,85 +415,360 @@ namespace UnitConverterUI {
             this.labelTimeValue.TabIndex = 11;
             this.labelTimeValue.Text = "Value";
             // 
-            // textBox5
+            // comboBoxTimeUnit
             // 
-            this.textBox5.Location = new System.Drawing.Point(626, 399);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(125, 27);
-            this.textBox5.TabIndex = 25;
+            this.comboBoxTimeUnit.FormattingEnabled = true;
+            this.comboBoxTimeUnit.Location = new System.Drawing.Point(20, 38);
+            this.comboBoxTimeUnit.Name = "comboBoxTimeUnit";
+            this.comboBoxTimeUnit.Size = new System.Drawing.Size(151, 28);
+            this.comboBoxTimeUnit.TabIndex = 7;
             // 
-            // textBox6
+            // labelTimeUnit
             // 
-            this.textBox6.Location = new System.Drawing.Point(626, 325);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(125, 27);
-            this.textBox6.TabIndex = 24;
+            this.labelTimeUnit.AutoSize = true;
+            this.labelTimeUnit.Location = new System.Drawing.Point(20, 15);
+            this.labelTimeUnit.Name = "labelTimeUnit";
+            this.labelTimeUnit.Size = new System.Drawing.Size(36, 20);
+            this.labelTimeUnit.TabIndex = 0;
+            this.labelTimeUnit.Text = "Unit";
             // 
-            // textBox7
+            // tabDistance
             // 
-            this.textBox7.Location = new System.Drawing.Point(626, 254);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(125, 27);
-            this.textBox7.TabIndex = 23;
+            this.tabDistance.Controls.Add(this.textBoxFeetInch);
+            this.tabDistance.Controls.Add(this.labelFeetInch);
+            this.tabDistance.Controls.Add(this.textBoxMile);
+            this.tabDistance.Controls.Add(this.labelMiles);
+            this.tabDistance.Controls.Add(this.textBoxNauticalMile);
+            this.tabDistance.Controls.Add(this.textBoxYard);
+            this.tabDistance.Controls.Add(this.labelNauticalMile);
+            this.tabDistance.Controls.Add(this.labelYard);
+            this.tabDistance.Controls.Add(this.textBoxFeet);
+            this.tabDistance.Controls.Add(this.textBoxInch);
+            this.tabDistance.Controls.Add(this.textBoxMil);
+            this.tabDistance.Controls.Add(this.labelFeet);
+            this.tabDistance.Controls.Add(this.labelInch);
+            this.tabDistance.Controls.Add(this.labelMil);
+            this.tabDistance.Controls.Add(this.labelInchIn);
+            this.tabDistance.Controls.Add(this.labelFeetIn);
+            this.tabDistance.Controls.Add(this.textBox10);
+            this.tabDistance.Controls.Add(this.textBoxMeter);
+            this.tabDistance.Controls.Add(this.labelMeter);
+            this.tabDistance.Controls.Add(this.textBoxLightYear);
+            this.tabDistance.Controls.Add(this.textBoxKilometer);
+            this.tabDistance.Controls.Add(this.textBoxCentimeter);
+            this.tabDistance.Controls.Add(this.labelLightYear);
+            this.tabDistance.Controls.Add(this.labelKilometer);
+            this.tabDistance.Controls.Add(this.labelCentimeter);
+            this.tabDistance.Controls.Add(this.textBoxMillimeter);
+            this.tabDistance.Controls.Add(this.textBoxMicrometer);
+            this.tabDistance.Controls.Add(this.textBoxNanometer);
+            this.tabDistance.Controls.Add(this.textBoxDistanceInput);
+            this.tabDistance.Controls.Add(this.buttonConvertDistance);
+            this.tabDistance.Controls.Add(this.labelMillisecond);
+            this.tabDistance.Controls.Add(this.labelMicrometer);
+            this.tabDistance.Controls.Add(this.labelNanometer);
+            this.tabDistance.Controls.Add(this.labelDistanceInput);
+            this.tabDistance.Controls.Add(this.comboBoxDistanceUnit);
+            this.tabDistance.Controls.Add(this.labelDistanceUnit);
+            this.tabDistance.Location = new System.Drawing.Point(4, 29);
+            this.tabDistance.Name = "tabDistance";
+            this.tabDistance.Padding = new System.Windows.Forms.Padding(3);
+            this.tabDistance.Size = new System.Drawing.Size(1488, 800);
+            this.tabDistance.TabIndex = 2;
+            this.tabDistance.Text = "Distance";
+            this.tabDistance.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // textBoxFeetInch
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(626, 376);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 20);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "Kelvin";
+            this.textBoxFeetInch.Location = new System.Drawing.Point(1017, 184);
+            this.textBoxFeetInch.Name = "textBoxFeetInch";
+            this.textBoxFeetInch.Size = new System.Drawing.Size(125, 27);
+            this.textBoxFeetInch.TabIndex = 67;
             // 
-            // label6
+            // labelFeetInch
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(626, 302);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 20);
-            this.label6.TabIndex = 21;
-            this.label6.Text = "Fahrenheit";
+            this.labelFeetInch.AutoSize = true;
+            this.labelFeetInch.Location = new System.Drawing.Point(1017, 161);
+            this.labelFeetInch.Name = "labelFeetInch";
+            this.labelFeetInch.Size = new System.Drawing.Size(50, 20);
+            this.labelFeetInch.TabIndex = 66;
+            this.labelFeetInch.Text = "Inches";
             // 
-            // label7
+            // textBoxMile
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(626, 232);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(54, 20);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "Celsius";
+            this.textBoxMile.Location = new System.Drawing.Point(886, 333);
+            this.textBoxMile.Name = "textBoxMile";
+            this.textBoxMile.Size = new System.Drawing.Size(125, 27);
+            this.textBoxMile.TabIndex = 65;
             // 
-            // textBox8
+            // labelMiles
             // 
-            this.textBox8.Location = new System.Drawing.Point(626, 547);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(125, 27);
-            this.textBox8.TabIndex = 29;
+            this.labelMiles.AutoSize = true;
+            this.labelMiles.Location = new System.Drawing.Point(886, 310);
+            this.labelMiles.Name = "labelMiles";
+            this.labelMiles.Size = new System.Drawing.Size(44, 20);
+            this.labelMiles.TabIndex = 64;
+            this.labelMiles.Text = "Miles";
             // 
-            // textBox9
+            // textBoxNauticalMile
             // 
-            this.textBox9.Location = new System.Drawing.Point(626, 473);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(125, 27);
-            this.textBox9.TabIndex = 28;
+            this.textBoxNauticalMile.Location = new System.Drawing.Point(886, 411);
+            this.textBoxNauticalMile.Name = "textBoxNauticalMile";
+            this.textBoxNauticalMile.Size = new System.Drawing.Size(125, 27);
+            this.textBoxNauticalMile.TabIndex = 63;
             // 
-            // label8
+            // textBoxYard
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(626, 524);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(49, 20);
-            this.label8.TabIndex = 27;
-            this.label8.Text = "Kelvin";
+            this.textBoxYard.Location = new System.Drawing.Point(886, 256);
+            this.textBoxYard.Name = "textBoxYard";
+            this.textBoxYard.Size = new System.Drawing.Size(125, 27);
+            this.textBoxYard.TabIndex = 62;
             // 
-            // label9
+            // labelNauticalMile
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(626, 450);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 20);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "Fahrenheit";
+            this.labelNauticalMile.AutoSize = true;
+            this.labelNauticalMile.Location = new System.Drawing.Point(886, 388);
+            this.labelNauticalMile.Name = "labelNauticalMile";
+            this.labelNauticalMile.Size = new System.Drawing.Size(103, 20);
+            this.labelNauticalMile.TabIndex = 61;
+            this.labelNauticalMile.Text = "Nautical Miles";
+            // 
+            // labelYard
+            // 
+            this.labelYard.AutoSize = true;
+            this.labelYard.Location = new System.Drawing.Point(886, 234);
+            this.labelYard.Name = "labelYard";
+            this.labelYard.Size = new System.Drawing.Size(44, 20);
+            this.labelYard.TabIndex = 60;
+            this.labelYard.Text = "Yards";
+            // 
+            // textBoxFeet
+            // 
+            this.textBoxFeet.Location = new System.Drawing.Point(886, 184);
+            this.textBoxFeet.Name = "textBoxFeet";
+            this.textBoxFeet.Size = new System.Drawing.Size(125, 27);
+            this.textBoxFeet.TabIndex = 59;
+            // 
+            // textBoxInch
+            // 
+            this.textBoxInch.Location = new System.Drawing.Point(886, 110);
+            this.textBoxInch.Name = "textBoxInch";
+            this.textBoxInch.Size = new System.Drawing.Size(125, 27);
+            this.textBoxInch.TabIndex = 58;
+            // 
+            // textBoxMil
+            // 
+            this.textBoxMil.Location = new System.Drawing.Point(886, 39);
+            this.textBoxMil.Name = "textBoxMil";
+            this.textBoxMil.Size = new System.Drawing.Size(125, 27);
+            this.textBoxMil.TabIndex = 57;
+            // 
+            // labelFeet
+            // 
+            this.labelFeet.AutoSize = true;
+            this.labelFeet.Location = new System.Drawing.Point(886, 161);
+            this.labelFeet.Name = "labelFeet";
+            this.labelFeet.Size = new System.Drawing.Size(37, 20);
+            this.labelFeet.TabIndex = 56;
+            this.labelFeet.Text = "Feet";
+            // 
+            // labelInch
+            // 
+            this.labelInch.AutoSize = true;
+            this.labelInch.Location = new System.Drawing.Point(886, 87);
+            this.labelInch.Name = "labelInch";
+            this.labelInch.Size = new System.Drawing.Size(50, 20);
+            this.labelInch.TabIndex = 55;
+            this.labelInch.Text = "Inches";
+            // 
+            // labelMil
+            // 
+            this.labelMil.AutoSize = true;
+            this.labelMil.Location = new System.Drawing.Point(886, 17);
+            this.labelMil.Name = "labelMil";
+            this.labelMil.Size = new System.Drawing.Size(30, 20);
+            this.labelMil.TabIndex = 54;
+            this.labelMil.Text = "Mil";
+            // 
+            // labelInchIn
+            // 
+            this.labelInchIn.AutoSize = true;
+            this.labelInchIn.Location = new System.Drawing.Point(339, 69);
+            this.labelInchIn.Name = "labelInchIn";
+            this.labelInchIn.Size = new System.Drawing.Size(50, 20);
+            this.labelInchIn.TabIndex = 53;
+            this.labelInchIn.Text = "Inches";
+            // 
+            // labelFeetIn
+            // 
+            this.labelFeetIn.AutoSize = true;
+            this.labelFeetIn.Location = new System.Drawing.Point(208, 69);
+            this.labelFeetIn.Name = "labelFeetIn";
+            this.labelFeetIn.Size = new System.Drawing.Size(37, 20);
+            this.labelFeetIn.TabIndex = 52;
+            this.labelFeetIn.Text = "Feet";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(339, 39);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(125, 27);
+            this.textBox10.TabIndex = 51;
+            // 
+            // textBoxMeter
+            // 
+            this.textBoxMeter.Location = new System.Drawing.Point(656, 333);
+            this.textBoxMeter.Name = "textBoxMeter";
+            this.textBoxMeter.Size = new System.Drawing.Size(125, 27);
+            this.textBoxMeter.TabIndex = 50;
+            // 
+            // labelMeter
+            // 
+            this.labelMeter.AutoSize = true;
+            this.labelMeter.Location = new System.Drawing.Point(656, 310);
+            this.labelMeter.Name = "labelMeter";
+            this.labelMeter.Size = new System.Drawing.Size(54, 20);
+            this.labelMeter.TabIndex = 48;
+            this.labelMeter.Text = "Meters";
+            // 
+            // textBoxLightYear
+            // 
+            this.textBoxLightYear.Location = new System.Drawing.Point(656, 485);
+            this.textBoxLightYear.Name = "textBoxLightYear";
+            this.textBoxLightYear.Size = new System.Drawing.Size(125, 27);
+            this.textBoxLightYear.TabIndex = 46;
+            // 
+            // textBoxKilometer
+            // 
+            this.textBoxKilometer.Location = new System.Drawing.Point(656, 411);
+            this.textBoxKilometer.Name = "textBoxKilometer";
+            this.textBoxKilometer.Size = new System.Drawing.Size(125, 27);
+            this.textBoxKilometer.TabIndex = 45;
+            // 
+            // textBoxCentimeter
+            // 
+            this.textBoxCentimeter.Location = new System.Drawing.Point(656, 256);
+            this.textBoxCentimeter.Name = "textBoxCentimeter";
+            this.textBoxCentimeter.Size = new System.Drawing.Size(125, 27);
+            this.textBoxCentimeter.TabIndex = 44;
+            // 
+            // labelLightYear
+            // 
+            this.labelLightYear.AutoSize = true;
+            this.labelLightYear.Location = new System.Drawing.Point(656, 462);
+            this.labelLightYear.Name = "labelLightYear";
+            this.labelLightYear.Size = new System.Drawing.Size(80, 20);
+            this.labelLightYear.TabIndex = 43;
+            this.labelLightYear.Text = "Light Years";
+            // 
+            // labelKilometer
+            // 
+            this.labelKilometer.AutoSize = true;
+            this.labelKilometer.Location = new System.Drawing.Point(656, 388);
+            this.labelKilometer.Name = "labelKilometer";
+            this.labelKilometer.Size = new System.Drawing.Size(80, 20);
+            this.labelKilometer.TabIndex = 42;
+            this.labelKilometer.Text = "Kilometers";
+            // 
+            // labelCentimeter
+            // 
+            this.labelCentimeter.AutoSize = true;
+            this.labelCentimeter.Location = new System.Drawing.Point(656, 234);
+            this.labelCentimeter.Name = "labelCentimeter";
+            this.labelCentimeter.Size = new System.Drawing.Size(88, 20);
+            this.labelCentimeter.TabIndex = 41;
+            this.labelCentimeter.Text = "Centimeters";
+            // 
+            // textBoxMillimeter
+            // 
+            this.textBoxMillimeter.Location = new System.Drawing.Point(656, 184);
+            this.textBoxMillimeter.Name = "textBoxMillimeter";
+            this.textBoxMillimeter.Size = new System.Drawing.Size(125, 27);
+            this.textBoxMillimeter.TabIndex = 40;
+            // 
+            // textBoxMicrometer
+            // 
+            this.textBoxMicrometer.Location = new System.Drawing.Point(656, 110);
+            this.textBoxMicrometer.Name = "textBoxMicrometer";
+            this.textBoxMicrometer.Size = new System.Drawing.Size(125, 27);
+            this.textBoxMicrometer.TabIndex = 39;
+            // 
+            // textBoxNanometer
+            // 
+            this.textBoxNanometer.Location = new System.Drawing.Point(656, 39);
+            this.textBoxNanometer.Name = "textBoxNanometer";
+            this.textBoxNanometer.Size = new System.Drawing.Size(125, 27);
+            this.textBoxNanometer.TabIndex = 38;
+            // 
+            // textBoxDistanceInput
+            // 
+            this.textBoxDistanceInput.Location = new System.Drawing.Point(208, 39);
+            this.textBoxDistanceInput.Name = "textBoxDistanceInput";
+            this.textBoxDistanceInput.Size = new System.Drawing.Size(125, 27);
+            this.textBoxDistanceInput.TabIndex = 37;
+            // 
+            // buttonConvertDistance
+            // 
+            this.buttonConvertDistance.Location = new System.Drawing.Point(530, 36);
+            this.buttonConvertDistance.Name = "buttonConvertDistance";
+            this.buttonConvertDistance.Size = new System.Drawing.Size(94, 29);
+            this.buttonConvertDistance.TabIndex = 36;
+            this.buttonConvertDistance.Text = "Convert";
+            this.buttonConvertDistance.UseVisualStyleBackColor = true;
+            this.buttonConvertDistance.Click += new System.EventHandler(this.buttonConvertDistance_Click);
+            // 
+            // labelMillisecond
+            // 
+            this.labelMillisecond.AutoSize = true;
+            this.labelMillisecond.Location = new System.Drawing.Point(656, 161);
+            this.labelMillisecond.Name = "labelMillisecond";
+            this.labelMillisecond.Size = new System.Drawing.Size(83, 20);
+            this.labelMillisecond.TabIndex = 35;
+            this.labelMillisecond.Text = "Millimeters";
+            // 
+            // labelMicrometer
+            // 
+            this.labelMicrometer.AutoSize = true;
+            this.labelMicrometer.Location = new System.Drawing.Point(656, 87);
+            this.labelMicrometer.Name = "labelMicrometer";
+            this.labelMicrometer.Size = new System.Drawing.Size(92, 20);
+            this.labelMicrometer.TabIndex = 34;
+            this.labelMicrometer.Text = "Micrometers";
+            // 
+            // labelNanometer
+            // 
+            this.labelNanometer.AutoSize = true;
+            this.labelNanometer.Location = new System.Drawing.Point(656, 17);
+            this.labelNanometer.Name = "labelNanometer";
+            this.labelNanometer.Size = new System.Drawing.Size(90, 20);
+            this.labelNanometer.TabIndex = 33;
+            this.labelNanometer.Text = "Nanometers";
+            // 
+            // labelDistanceInput
+            // 
+            this.labelDistanceInput.AutoSize = true;
+            this.labelDistanceInput.Location = new System.Drawing.Point(208, 15);
+            this.labelDistanceInput.Name = "labelDistanceInput";
+            this.labelDistanceInput.Size = new System.Drawing.Size(45, 20);
+            this.labelDistanceInput.TabIndex = 32;
+            this.labelDistanceInput.Text = "Value";
+            // 
+            // comboBoxDistanceUnit
+            // 
+            this.comboBoxDistanceUnit.FormattingEnabled = true;
+            this.comboBoxDistanceUnit.Location = new System.Drawing.Point(22, 38);
+            this.comboBoxDistanceUnit.Name = "comboBoxDistanceUnit";
+            this.comboBoxDistanceUnit.Size = new System.Drawing.Size(151, 28);
+            this.comboBoxDistanceUnit.TabIndex = 31;
+            // 
+            // labelDistanceUnit
+            // 
+            this.labelDistanceUnit.AutoSize = true;
+            this.labelDistanceUnit.Location = new System.Drawing.Point(22, 15);
+            this.labelDistanceUnit.Name = "labelDistanceUnit";
+            this.labelDistanceUnit.Size = new System.Drawing.Size(36, 20);
+            this.labelDistanceUnit.TabIndex = 30;
+            this.labelDistanceUnit.Text = "Unit";
             // 
             // UnitConverter
             // 
@@ -406,6 +783,8 @@ namespace UnitConverterUI {
             this.tabTemperature.PerformLayout();
             this.tabTime.ResumeLayout(false);
             this.tabTime.PerformLayout();
+            this.tabDistance.ResumeLayout(false);
+            this.tabDistance.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -427,25 +806,62 @@ namespace UnitConverterUI {
         private Label labelTempValue;
         private Label labelTempUnit;
         private Label labelTimeUnit;
-        private TextBox textBox8;
-        private TextBox textBox9;
-        private Label label8;
-        private Label label9;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox textBoxMinutes;
+        private TextBox textBoxYears;
+        private Label labelMinutes;
+        private Label labelYears;
+        private TextBox textBoxDays;
+        private TextBox textBoxHours;
+        private TextBox textBoxSeconds;
+        private Label labelDays;
+        private Label labelHours;
+        private Label labelSeconds;
+        private TextBox textBoxMilli;
+        private TextBox textBoxMicro;
+        private TextBox textBoxNanoseconds;
         private TextBox textBoxTimeInput;
-        private Button button1;
-        private Label label1;
-        private Label label2;
-        private Label label3;
+        private Button buttonConvertTime;
+        private Label labelMilliseconds;
+        private Label labelMicroseconds;
+        private Label labelNano;
         private Label labelTimeValue;
         private ComboBox comboBoxTimeUnit;
+        private TabPage tabDistance;
+        private TextBox textBox10;
+        private TextBox textBoxMeter;
+        private Label labelMeter;
+        private TextBox textBoxLightYear;
+        private TextBox textBoxKilometer;
+        private TextBox textBoxCentimeter;
+        private Label labelLightYear;
+        private Label labelKilometer;
+        private Label labelCentimeter;
+        private TextBox textBoxMillimeter;
+        private TextBox textBoxMicrometer;
+        private TextBox textBoxNanometer;
+        private TextBox textBoxDistanceInput;
+        private Button buttonConvertDistance;
+        private Label labelMillisecond;
+        private Label labelMicrometer;
+        private Label labelNanometer;
+        private Label labelDistanceInput;
+        private ComboBox comboBoxDistanceUnit;
+        private Label labelDistanceUnit;
+        private Label labelInchIn;
+        private Label labelFeetIn;
+        private TextBox textBoxFeetInch;
+        private Label labelFeetInch;
+        private TextBox textBoxMile;
+        private Label labelMiles;
+        private TextBox textBoxNauticalMile;
+        private TextBox textBoxYard;
+        private Label labelNauticalMile;
+        private Label labelYard;
+        private TextBox textBoxFeet;
+        private TextBox textBoxInch;
+        private TextBox textBoxMil;
+        private Label labelFeet;
+        private Label labelInch;
+        private Label labelMil;
     }
 }

@@ -10,9 +10,9 @@ namespace BaseUnitLibrary {
         private double _seconds;
 
         // Properties
-        public double NanoSeconds { get => SecondsToNano(_seconds); }
-        public double MicroSeconds { get => SecondsToMicro(_seconds); }
-        public double MilliSeconds { get => SecondsToMilli(_seconds); }
+        public double Nanoseconds { get => Prefix.ToNano(_seconds); }
+        public double Microseconds { get => Prefix.ToMicro(_seconds); }
+        public double Milliseconds { get => Prefix.ToMilli(_seconds); }
         public double Seconds { get => _seconds; }
         public double Minutes { get => SecondsToMinute(_seconds); }
         public double Hours { get => SecondsToHour(_seconds); }
@@ -22,14 +22,14 @@ namespace BaseUnitLibrary {
         // Constructor
         public Time(double input, TimeUnits unit) {
             switch (unit) {
-                case TimeUnits.NanoSeconds:
-                    _seconds = NanoToSeconds(input);
+                case TimeUnits.Nanoseconds:
+                    _seconds = Prefix.NanoTo(input);
                     break;
-                case TimeUnits.MicroSeconds:
-                    _seconds = MicroToSeconds(input);
+                case TimeUnits.Microseconds:
+                    _seconds = Prefix.MicroTo(input);
                     break;
-                case TimeUnits.MilliSeconds:
-                    _seconds = MilliToSeconds(input);
+                case TimeUnits.Milliseconds:
+                    _seconds = Prefix.MilliTo(input);
                     break;
                 case TimeUnits.Seconds:
                     _seconds = input;
@@ -51,32 +51,20 @@ namespace BaseUnitLibrary {
         }
 
         // Methods
-        private double NanoToSeconds(double nano) { return MicroToSeconds(nano / 1000); }
-        private double MicroToSeconds(double micro) { return MilliToSeconds(micro / 1000); }
-        private double MilliToSeconds(double milli) { return milli / 1000; }
         private double MinuteToSeconds(double minute) { return minute * 60; }
         private double HourToSeconds(double hour) { return MinuteToSeconds(hour * 60); }
         private double DayToSeconds(double day) { return HourToSeconds(day * 24); }
         private double YearToSeconds(double year) { return DayToSeconds(year * 365); }
-
-        private double SecondsToNano(double seconds) { return SecondsToMicro(seconds * 1000); }
-        private double SecondsToMicro(double seconds){ return SecondsToMilli(seconds) * 1000; }
-        private double SecondsToMilli(double seconds){ return seconds * 1000; }
         private double SecondsToMinute(double seconds){ return seconds / 60; }
         private double SecondsToHour(double seconds){ return SecondsToMinute(seconds) / 60; }
         private double SecondsToDay(double seconds){ return SecondsToHour(seconds) / 24; }
         private double SecondsYear(double seconds){ return SecondsToDay(seconds) / 365; }
 
-
-
-
-
-
         // Enum
         public enum TimeUnits {
-            NanoSeconds,
-            MicroSeconds,
-            MilliSeconds,
+            Nanoseconds,
+            Microseconds,
+            Milliseconds,
             Seconds,
             Minutes,
             Hours,
