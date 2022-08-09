@@ -9,6 +9,7 @@ namespace BaseUnitLibrary {
         // Members
         private double _meters;
         private double _inches;
+        private int _feet;
 
         // Properties
         public double Nanometers { get => Prefix.ToNano(_meters); }
@@ -18,14 +19,15 @@ namespace BaseUnitLibrary {
         public double Meters { get => _meters; }
         public double Kilometers { get => Prefix.ToKilo(_meters); }
         public double Lightyears { get => _meters / 9460730472580800; }
-        public double Mils { get; }
-        public double Inches { get => 1; }
-        public double Feet { get => 1; }
-        public int WholeFeet { get => 1; }
-        public double Yards { get => 1; }
+        public double Mils { get => MetersToThou(_meters); }
+        public double Inches { get => MetersToInch(_meters); }
+        public double FootInch { get; }
+        public double Feet { get => MetersToFeet(_meters); }
+        public int WholeFeet { get => 4; }
+        public double Yards { get => MetersToYard(_meters); }
         public int WholeYards { get => 1; }
-        public double Miles { get => 1; }
-        public double NauticalMiles { get => 1; }
+        public double Miles { get => MetersToMile(_meters); }
+        public double NauticalMiles { get => MetersToNautical(_meters); }
 
 
         //Constructor
@@ -47,18 +49,16 @@ namespace BaseUnitLibrary {
                     _meters = input;
                     break;
                 case DistanceUnits.Kilometers:
-                    _meters = Prefix.ToKilo(input);
+                    _meters = Prefix.KiloTo(input);
                     break;
                 case DistanceUnits.LightYear:
                     _meters = LightYearToMeters(input);
                     break;
                 case DistanceUnits.Thou:
                     _meters = ThouToMeters(input);
-                    _inches = input / 1000;
                     break;
                 case DistanceUnits.Inches:
                     _meters = InchToMeters(input);
-                    _inches = input;
                     break;
                 case DistanceUnits.Feet:
                     _meters = FeetToMeters(input);
@@ -66,15 +66,12 @@ namespace BaseUnitLibrary {
                     break;
                 case DistanceUnits.Yard:
                     _meters = YardToMeters(input);
-                    _inches = input * 36;
                     break;
                 case DistanceUnits.Mile:
                     _meters = MileToMeters(input);
-                    _inches = input * 63360;
                     break;
                 case DistanceUnits.NauticalMile:
                     _meters = NauticalToMeters(input);
-                    _inches = input * 72913.4 ;
                     break;
                 default:
                     break;
@@ -89,7 +86,18 @@ namespace BaseUnitLibrary {
         private double YardToMeters(double yard) { return  yard / 1.094; }
         private double MileToMeters(double mile) { return mile * 1609.34; }
         private double NauticalToMeters(double nautical) { return nautical * 1852; }
+        private double MetersToThou(double meter) { return meter * 39370.078740157; }
         private double MetersToInch(double meter) { return meter * 39.37; }
+        private double MetersToFeet(double meter) { return meter * 3.281; }
+        private double MetersToYard(double meter) { return meter * 1.094; }
+        private double MetersToMile(double meter) { return meter / 1609.34; }
+        private double MetersToNautical(double meter) { return meter / 1852; }
+        private double MetersToWholeFeet(double meter) {
+            _feet = (int)_inches / 12;
+            _inches = _inches % 12;
+            return 1;
+        }
+        
 
         // Enum
         public enum DistanceUnits {

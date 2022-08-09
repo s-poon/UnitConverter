@@ -62,6 +62,8 @@ namespace UnitConverterUI {
             this.comboBoxTimeUnit = new System.Windows.Forms.ComboBox();
             this.labelTimeUnit = new System.Windows.Forms.Label();
             this.tabDistance = new System.Windows.Forms.TabPage();
+            this.textBoxFeet = new System.Windows.Forms.TextBox();
+            this.labelFeet = new System.Windows.Forms.Label();
             this.textBoxFeetInch = new System.Windows.Forms.TextBox();
             this.labelFeetInch = new System.Windows.Forms.Label();
             this.textBoxMile = new System.Windows.Forms.TextBox();
@@ -70,15 +72,15 @@ namespace UnitConverterUI {
             this.textBoxYard = new System.Windows.Forms.TextBox();
             this.labelNauticalMile = new System.Windows.Forms.Label();
             this.labelYard = new System.Windows.Forms.Label();
-            this.textBoxFeet = new System.Windows.Forms.TextBox();
+            this.textBoxWholeFeet = new System.Windows.Forms.TextBox();
             this.textBoxInch = new System.Windows.Forms.TextBox();
             this.textBoxMil = new System.Windows.Forms.TextBox();
-            this.labelFeet = new System.Windows.Forms.Label();
+            this.labelWholeFeet = new System.Windows.Forms.Label();
             this.labelInch = new System.Windows.Forms.Label();
             this.labelMil = new System.Windows.Forms.Label();
             this.labelInchIn = new System.Windows.Forms.Label();
             this.labelFeetIn = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBoxInchIn = new System.Windows.Forms.TextBox();
             this.textBoxMeter = new System.Windows.Forms.TextBox();
             this.labelMeter = new System.Windows.Forms.Label();
             this.textBoxLightYear = new System.Windows.Forms.TextBox();
@@ -164,7 +166,6 @@ namespace UnitConverterUI {
             this.textBoxTempInput.Name = "textBoxTempInput";
             this.textBoxTempInput.Size = new System.Drawing.Size(125, 27);
             this.textBoxTempInput.TabIndex = 7;
-            this.textBoxTempInput.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // comboBoxTemperatureUnit
             // 
@@ -434,6 +435,8 @@ namespace UnitConverterUI {
             // 
             // tabDistance
             // 
+            this.tabDistance.Controls.Add(this.textBoxFeet);
+            this.tabDistance.Controls.Add(this.labelFeet);
             this.tabDistance.Controls.Add(this.textBoxFeetInch);
             this.tabDistance.Controls.Add(this.labelFeetInch);
             this.tabDistance.Controls.Add(this.textBoxMile);
@@ -442,15 +445,15 @@ namespace UnitConverterUI {
             this.tabDistance.Controls.Add(this.textBoxYard);
             this.tabDistance.Controls.Add(this.labelNauticalMile);
             this.tabDistance.Controls.Add(this.labelYard);
-            this.tabDistance.Controls.Add(this.textBoxFeet);
+            this.tabDistance.Controls.Add(this.textBoxWholeFeet);
             this.tabDistance.Controls.Add(this.textBoxInch);
             this.tabDistance.Controls.Add(this.textBoxMil);
-            this.tabDistance.Controls.Add(this.labelFeet);
+            this.tabDistance.Controls.Add(this.labelWholeFeet);
             this.tabDistance.Controls.Add(this.labelInch);
             this.tabDistance.Controls.Add(this.labelMil);
             this.tabDistance.Controls.Add(this.labelInchIn);
             this.tabDistance.Controls.Add(this.labelFeetIn);
-            this.tabDistance.Controls.Add(this.textBox10);
+            this.tabDistance.Controls.Add(this.textBoxInchIn);
             this.tabDistance.Controls.Add(this.textBoxMeter);
             this.tabDistance.Controls.Add(this.labelMeter);
             this.tabDistance.Controls.Add(this.textBoxLightYear);
@@ -478,6 +481,22 @@ namespace UnitConverterUI {
             this.tabDistance.Text = "Distance";
             this.tabDistance.UseVisualStyleBackColor = true;
             // 
+            // textBoxFeet
+            // 
+            this.textBoxFeet.Location = new System.Drawing.Point(886, 256);
+            this.textBoxFeet.Name = "textBoxFeet";
+            this.textBoxFeet.Size = new System.Drawing.Size(125, 27);
+            this.textBoxFeet.TabIndex = 69;
+            // 
+            // labelFeet
+            // 
+            this.labelFeet.AutoSize = true;
+            this.labelFeet.Location = new System.Drawing.Point(886, 233);
+            this.labelFeet.Name = "labelFeet";
+            this.labelFeet.Size = new System.Drawing.Size(37, 20);
+            this.labelFeet.TabIndex = 68;
+            this.labelFeet.Text = "Feet";
+            // 
             // textBoxFeetInch
             // 
             this.textBoxFeetInch.Location = new System.Drawing.Point(1017, 184);
@@ -496,7 +515,7 @@ namespace UnitConverterUI {
             // 
             // textBoxMile
             // 
-            this.textBoxMile.Location = new System.Drawing.Point(886, 333);
+            this.textBoxMile.Location = new System.Drawing.Point(886, 407);
             this.textBoxMile.Name = "textBoxMile";
             this.textBoxMile.Size = new System.Drawing.Size(125, 27);
             this.textBoxMile.TabIndex = 65;
@@ -504,7 +523,7 @@ namespace UnitConverterUI {
             // labelMiles
             // 
             this.labelMiles.AutoSize = true;
-            this.labelMiles.Location = new System.Drawing.Point(886, 310);
+            this.labelMiles.Location = new System.Drawing.Point(886, 384);
             this.labelMiles.Name = "labelMiles";
             this.labelMiles.Size = new System.Drawing.Size(44, 20);
             this.labelMiles.TabIndex = 64;
@@ -512,14 +531,14 @@ namespace UnitConverterUI {
             // 
             // textBoxNauticalMile
             // 
-            this.textBoxNauticalMile.Location = new System.Drawing.Point(886, 411);
+            this.textBoxNauticalMile.Location = new System.Drawing.Point(886, 485);
             this.textBoxNauticalMile.Name = "textBoxNauticalMile";
             this.textBoxNauticalMile.Size = new System.Drawing.Size(125, 27);
             this.textBoxNauticalMile.TabIndex = 63;
             // 
             // textBoxYard
             // 
-            this.textBoxYard.Location = new System.Drawing.Point(886, 256);
+            this.textBoxYard.Location = new System.Drawing.Point(886, 330);
             this.textBoxYard.Name = "textBoxYard";
             this.textBoxYard.Size = new System.Drawing.Size(125, 27);
             this.textBoxYard.TabIndex = 62;
@@ -527,7 +546,7 @@ namespace UnitConverterUI {
             // labelNauticalMile
             // 
             this.labelNauticalMile.AutoSize = true;
-            this.labelNauticalMile.Location = new System.Drawing.Point(886, 388);
+            this.labelNauticalMile.Location = new System.Drawing.Point(886, 462);
             this.labelNauticalMile.Name = "labelNauticalMile";
             this.labelNauticalMile.Size = new System.Drawing.Size(103, 20);
             this.labelNauticalMile.TabIndex = 61;
@@ -536,18 +555,18 @@ namespace UnitConverterUI {
             // labelYard
             // 
             this.labelYard.AutoSize = true;
-            this.labelYard.Location = new System.Drawing.Point(886, 234);
+            this.labelYard.Location = new System.Drawing.Point(886, 308);
             this.labelYard.Name = "labelYard";
             this.labelYard.Size = new System.Drawing.Size(44, 20);
             this.labelYard.TabIndex = 60;
             this.labelYard.Text = "Yards";
             // 
-            // textBoxFeet
+            // textBoxWholeFeet
             // 
-            this.textBoxFeet.Location = new System.Drawing.Point(886, 184);
-            this.textBoxFeet.Name = "textBoxFeet";
-            this.textBoxFeet.Size = new System.Drawing.Size(125, 27);
-            this.textBoxFeet.TabIndex = 59;
+            this.textBoxWholeFeet.Location = new System.Drawing.Point(886, 184);
+            this.textBoxWholeFeet.Name = "textBoxWholeFeet";
+            this.textBoxWholeFeet.Size = new System.Drawing.Size(125, 27);
+            this.textBoxWholeFeet.TabIndex = 59;
             // 
             // textBoxInch
             // 
@@ -563,14 +582,14 @@ namespace UnitConverterUI {
             this.textBoxMil.Size = new System.Drawing.Size(125, 27);
             this.textBoxMil.TabIndex = 57;
             // 
-            // labelFeet
+            // labelWholeFeet
             // 
-            this.labelFeet.AutoSize = true;
-            this.labelFeet.Location = new System.Drawing.Point(886, 161);
-            this.labelFeet.Name = "labelFeet";
-            this.labelFeet.Size = new System.Drawing.Size(37, 20);
-            this.labelFeet.TabIndex = 56;
-            this.labelFeet.Text = "Feet";
+            this.labelWholeFeet.AutoSize = true;
+            this.labelWholeFeet.Location = new System.Drawing.Point(886, 161);
+            this.labelWholeFeet.Name = "labelWholeFeet";
+            this.labelWholeFeet.Size = new System.Drawing.Size(37, 20);
+            this.labelWholeFeet.TabIndex = 56;
+            this.labelWholeFeet.Text = "Feet";
             // 
             // labelInch
             // 
@@ -608,12 +627,12 @@ namespace UnitConverterUI {
             this.labelFeetIn.TabIndex = 52;
             this.labelFeetIn.Text = "Feet";
             // 
-            // textBox10
+            // textBoxInchIn
             // 
-            this.textBox10.Location = new System.Drawing.Point(339, 39);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(125, 27);
-            this.textBox10.TabIndex = 51;
+            this.textBoxInchIn.Location = new System.Drawing.Point(339, 39);
+            this.textBoxInchIn.Name = "textBoxInchIn";
+            this.textBoxInchIn.Size = new System.Drawing.Size(125, 27);
+            this.textBoxInchIn.TabIndex = 51;
             // 
             // textBoxMeter
             // 
@@ -760,6 +779,7 @@ namespace UnitConverterUI {
             this.comboBoxDistanceUnit.Name = "comboBoxDistanceUnit";
             this.comboBoxDistanceUnit.Size = new System.Drawing.Size(151, 28);
             this.comboBoxDistanceUnit.TabIndex = 31;
+            this.comboBoxDistanceUnit.SelectedIndexChanged += new System.EventHandler(this.comboBoxDistanceUnit_SelectedIndexChanged);
             // 
             // labelDistanceUnit
             // 
@@ -827,7 +847,7 @@ namespace UnitConverterUI {
         private Label labelTimeValue;
         private ComboBox comboBoxTimeUnit;
         private TabPage tabDistance;
-        private TextBox textBox10;
+        private TextBox textBoxInchIn;
         private TextBox textBoxMeter;
         private Label labelMeter;
         private TextBox textBoxLightYear;
@@ -857,11 +877,13 @@ namespace UnitConverterUI {
         private TextBox textBoxYard;
         private Label labelNauticalMile;
         private Label labelYard;
-        private TextBox textBoxFeet;
+        private TextBox textBoxWholeFeet;
         private TextBox textBoxInch;
         private TextBox textBoxMil;
-        private Label labelFeet;
+        private Label labelWholeFeet;
         private Label labelInch;
         private Label labelMil;
+        private TextBox textBoxFeet;
+        private Label labelFeet;
     }
 }

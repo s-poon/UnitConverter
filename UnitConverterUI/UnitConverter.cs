@@ -24,10 +24,6 @@ namespace UnitConverterUI {
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e) {
-
-        }
-
         private void button1_Click(object sender, EventArgs e) {
             ValidateTemp();
             textBoxCelsius.Text = _temperature.Celsius.ToString("F2");
@@ -122,16 +118,24 @@ namespace UnitConverterUI {
 
         private void ValidateDistance() {
             double input;
+            double inputInch;
             string value = comboBoxDistanceUnit.Text;
             DistanceUnits unit;
-            if (double.TryParse(textBoxDistanceInput.Text, out input) && Enum.TryParse(value, out unit)) {
+            if (
+                double.TryParse(textBoxDistanceInput.Text, out input) && 
+                Enum.TryParse(value, out unit)
+            ){
                 if (input < 0) {
                     MessageBox.Show(
-                        "Time cannot be negative",
+                        "Distance cannot be negative",
                         "Invalid Time",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Warning
                     );
+                }
+                else if(unit == DistanceUnits.Feet && double.TryParse(textBoxInchIn.Text, out inputInch)) {
+                    inputInch += input * 12;
+                    _distance = new(inputInch, DistanceUnits.Feet);
                 }
                 else {
                     _distance = new(input, unit);
@@ -155,7 +159,22 @@ namespace UnitConverterUI {
             textBoxMile.Text = _distance.Miles.ToString("F2");
             textBoxNauticalMile.Text = _distance.NauticalMiles.ToString("F2");
 
-            textBoxFeetInch.Text = _distance.
+            textBoxWholeFeet.Text = _distance.WholeFeet.ToString();
+            textBoxFeetInch.Text = _distance.FootInch.ToString("F2");
+        }
+
+        private void comboBoxDistanceUnit_SelectedIndexChanged(object sender, EventArgs e) {
+            if (comboBoxDistanceUnit.SelectedIndex == 9) {
+                textBoxInchIn.Visible = true;
+                labelInchIn.Visible = true;
+                labelFeetIn.Visible = true;
+            }
+            else {
+                textBoxInchIn.Visible = false;
+                labelInchIn.Visible = false;
+                labelFeetIn.Visible = false;
+
+            }
         }
     }
 }
