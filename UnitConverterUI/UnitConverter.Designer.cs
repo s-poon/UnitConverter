@@ -1,5 +1,5 @@
 ﻿
-using static BaseUnitLibrary.Temperature;
+using static UnitLibrary.Temperature;
 
 namespace UnitConverterUI {
     partial class UnitConverter {
@@ -100,10 +100,53 @@ namespace UnitConverterUI {
             this.labelDistanceInput = new System.Windows.Forms.Label();
             this.comboBoxDistanceUnit = new System.Windows.Forms.ComboBox();
             this.labelDistanceUnit = new System.Windows.Forms.Label();
+            this.tabMass = new System.Windows.Forms.TabPage();
+            this.textBoxUSTon = new System.Windows.Forms.TextBox();
+            this.labelUSTon = new System.Windows.Forms.Label();
+            this.textBoxUKTon = new System.Windows.Forms.TextBox();
+            this.labelUKTon = new System.Windows.Forms.Label();
+            this.textBoxStone = new System.Windows.Forms.TextBox();
+            this.textBoxPound = new System.Windows.Forms.TextBox();
+            this.textBoxOunce = new System.Windows.Forms.TextBox();
+            this.labelStone = new System.Windows.Forms.Label();
+            this.labelPound = new System.Windows.Forms.Label();
+            this.labelOunce = new System.Windows.Forms.Label();
+            this.labelOunceIn = new System.Windows.Forms.Label();
+            this.labelPoundIn = new System.Windows.Forms.Label();
+            this.textBoxOunceIn = new System.Windows.Forms.TextBox();
+            this.textBoxTonne = new System.Windows.Forms.TextBox();
+            this.labelTonne = new System.Windows.Forms.Label();
+            this.textBoxKilogram = new System.Windows.Forms.TextBox();
+            this.textBoxGram = new System.Windows.Forms.TextBox();
+            this.textBoxMilligram = new System.Windows.Forms.TextBox();
+            this.textBoxMassInput = new System.Windows.Forms.TextBox();
+            this.buttonConvertMass = new System.Windows.Forms.Button();
+            this.labelKilogram = new System.Windows.Forms.Label();
+            this.labelGram = new System.Windows.Forms.Label();
+            this.labelMilligram = new System.Windows.Forms.Label();
+            this.labelMassInput = new System.Windows.Forms.Label();
+            this.comboBoxMassUnit = new System.Windows.Forms.ComboBox();
+            this.labelMassUnit = new System.Windows.Forms.Label();
+            this.tabSpeed = new System.Windows.Forms.TabPage();
+            this.textBoxKnot = new System.Windows.Forms.TextBox();
+            this.labelKnot = new System.Windows.Forms.Label();
+            this.textBoxMPH = new System.Windows.Forms.TextBox();
+            this.textBoxMPS = new System.Windows.Forms.TextBox();
+            this.textBoxKPH = new System.Windows.Forms.TextBox();
+            this.textBoxSpeedInput = new System.Windows.Forms.TextBox();
+            this.comboBoxSpeedUnit = new System.Windows.Forms.ComboBox();
+            this.buttonConvertSpeed = new System.Windows.Forms.Button();
+            this.labelMPH = new System.Windows.Forms.Label();
+            this.labelMPS = new System.Windows.Forms.Label();
+            this.labelKPH = new System.Windows.Forms.Label();
+            this.labelSpeedValue = new System.Windows.Forms.Label();
+            this.labelSpeedUnit = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.tabTemperature.SuspendLayout();
             this.tabTime.SuspendLayout();
             this.tabDistance.SuspendLayout();
+            this.tabMass.SuspendLayout();
+            this.tabSpeed.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl
@@ -111,6 +154,8 @@ namespace UnitConverterUI {
             this.tabControl.Controls.Add(this.tabTemperature);
             this.tabControl.Controls.Add(this.tabTime);
             this.tabControl.Controls.Add(this.tabDistance);
+            this.tabControl.Controls.Add(this.tabMass);
+            this.tabControl.Controls.Add(this.tabSpeed);
             this.tabControl.Location = new System.Drawing.Point(12, 12);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -184,7 +229,7 @@ namespace UnitConverterUI {
             this.buttonTempConvert.TabIndex = 5;
             this.buttonTempConvert.Text = "Convert";
             this.buttonTempConvert.UseVisualStyleBackColor = true;
-            this.buttonTempConvert.Click += new System.EventHandler(this.button1_Click);
+            this.buttonTempConvert.Click += new System.EventHandler(this.buttonTempConvert_Click);
             // 
             // labelKelvin
             // 
@@ -636,15 +681,15 @@ namespace UnitConverterUI {
             // 
             // textBoxMeter
             // 
-            this.textBoxMeter.Location = new System.Drawing.Point(656, 333);
+            this.textBoxMeter.Location = new System.Drawing.Point(600, 333);
             this.textBoxMeter.Name = "textBoxMeter";
-            this.textBoxMeter.Size = new System.Drawing.Size(125, 27);
+            this.textBoxMeter.Size = new System.Drawing.Size(206, 27);
             this.textBoxMeter.TabIndex = 50;
             // 
             // labelMeter
             // 
             this.labelMeter.AutoSize = true;
-            this.labelMeter.Location = new System.Drawing.Point(656, 310);
+            this.labelMeter.Location = new System.Drawing.Point(600, 310);
             this.labelMeter.Name = "labelMeter";
             this.labelMeter.Size = new System.Drawing.Size(54, 20);
             this.labelMeter.TabIndex = 48;
@@ -652,29 +697,29 @@ namespace UnitConverterUI {
             // 
             // textBoxLightYear
             // 
-            this.textBoxLightYear.Location = new System.Drawing.Point(656, 485);
+            this.textBoxLightYear.Location = new System.Drawing.Point(600, 485);
             this.textBoxLightYear.Name = "textBoxLightYear";
-            this.textBoxLightYear.Size = new System.Drawing.Size(125, 27);
+            this.textBoxLightYear.Size = new System.Drawing.Size(206, 27);
             this.textBoxLightYear.TabIndex = 46;
             // 
             // textBoxKilometer
             // 
-            this.textBoxKilometer.Location = new System.Drawing.Point(656, 411);
+            this.textBoxKilometer.Location = new System.Drawing.Point(600, 411);
             this.textBoxKilometer.Name = "textBoxKilometer";
-            this.textBoxKilometer.Size = new System.Drawing.Size(125, 27);
+            this.textBoxKilometer.Size = new System.Drawing.Size(206, 27);
             this.textBoxKilometer.TabIndex = 45;
             // 
             // textBoxCentimeter
             // 
-            this.textBoxCentimeter.Location = new System.Drawing.Point(656, 256);
+            this.textBoxCentimeter.Location = new System.Drawing.Point(600, 256);
             this.textBoxCentimeter.Name = "textBoxCentimeter";
-            this.textBoxCentimeter.Size = new System.Drawing.Size(125, 27);
+            this.textBoxCentimeter.Size = new System.Drawing.Size(206, 27);
             this.textBoxCentimeter.TabIndex = 44;
             // 
             // labelLightYear
             // 
             this.labelLightYear.AutoSize = true;
-            this.labelLightYear.Location = new System.Drawing.Point(656, 462);
+            this.labelLightYear.Location = new System.Drawing.Point(600, 462);
             this.labelLightYear.Name = "labelLightYear";
             this.labelLightYear.Size = new System.Drawing.Size(80, 20);
             this.labelLightYear.TabIndex = 43;
@@ -683,7 +728,7 @@ namespace UnitConverterUI {
             // labelKilometer
             // 
             this.labelKilometer.AutoSize = true;
-            this.labelKilometer.Location = new System.Drawing.Point(656, 388);
+            this.labelKilometer.Location = new System.Drawing.Point(600, 388);
             this.labelKilometer.Name = "labelKilometer";
             this.labelKilometer.Size = new System.Drawing.Size(80, 20);
             this.labelKilometer.TabIndex = 42;
@@ -692,7 +737,7 @@ namespace UnitConverterUI {
             // labelCentimeter
             // 
             this.labelCentimeter.AutoSize = true;
-            this.labelCentimeter.Location = new System.Drawing.Point(656, 234);
+            this.labelCentimeter.Location = new System.Drawing.Point(600, 234);
             this.labelCentimeter.Name = "labelCentimeter";
             this.labelCentimeter.Size = new System.Drawing.Size(88, 20);
             this.labelCentimeter.TabIndex = 41;
@@ -700,23 +745,23 @@ namespace UnitConverterUI {
             // 
             // textBoxMillimeter
             // 
-            this.textBoxMillimeter.Location = new System.Drawing.Point(656, 184);
+            this.textBoxMillimeter.Location = new System.Drawing.Point(600, 184);
             this.textBoxMillimeter.Name = "textBoxMillimeter";
-            this.textBoxMillimeter.Size = new System.Drawing.Size(125, 27);
+            this.textBoxMillimeter.Size = new System.Drawing.Size(206, 27);
             this.textBoxMillimeter.TabIndex = 40;
             // 
             // textBoxMicrometer
             // 
-            this.textBoxMicrometer.Location = new System.Drawing.Point(656, 110);
+            this.textBoxMicrometer.Location = new System.Drawing.Point(600, 110);
             this.textBoxMicrometer.Name = "textBoxMicrometer";
-            this.textBoxMicrometer.Size = new System.Drawing.Size(125, 27);
+            this.textBoxMicrometer.Size = new System.Drawing.Size(206, 27);
             this.textBoxMicrometer.TabIndex = 39;
             // 
             // textBoxNanometer
             // 
-            this.textBoxNanometer.Location = new System.Drawing.Point(656, 39);
+            this.textBoxNanometer.Location = new System.Drawing.Point(600, 39);
             this.textBoxNanometer.Name = "textBoxNanometer";
-            this.textBoxNanometer.Size = new System.Drawing.Size(125, 27);
+            this.textBoxNanometer.Size = new System.Drawing.Size(206, 27);
             this.textBoxNanometer.TabIndex = 38;
             // 
             // textBoxDistanceInput
@@ -728,7 +773,7 @@ namespace UnitConverterUI {
             // 
             // buttonConvertDistance
             // 
-            this.buttonConvertDistance.Location = new System.Drawing.Point(530, 36);
+            this.buttonConvertDistance.Location = new System.Drawing.Point(484, 38);
             this.buttonConvertDistance.Name = "buttonConvertDistance";
             this.buttonConvertDistance.Size = new System.Drawing.Size(94, 29);
             this.buttonConvertDistance.TabIndex = 36;
@@ -739,7 +784,7 @@ namespace UnitConverterUI {
             // labelMillisecond
             // 
             this.labelMillisecond.AutoSize = true;
-            this.labelMillisecond.Location = new System.Drawing.Point(656, 161);
+            this.labelMillisecond.Location = new System.Drawing.Point(600, 161);
             this.labelMillisecond.Name = "labelMillisecond";
             this.labelMillisecond.Size = new System.Drawing.Size(83, 20);
             this.labelMillisecond.TabIndex = 35;
@@ -748,7 +793,7 @@ namespace UnitConverterUI {
             // labelMicrometer
             // 
             this.labelMicrometer.AutoSize = true;
-            this.labelMicrometer.Location = new System.Drawing.Point(656, 87);
+            this.labelMicrometer.Location = new System.Drawing.Point(600, 87);
             this.labelMicrometer.Name = "labelMicrometer";
             this.labelMicrometer.Size = new System.Drawing.Size(92, 20);
             this.labelMicrometer.TabIndex = 34;
@@ -757,7 +802,7 @@ namespace UnitConverterUI {
             // labelNanometer
             // 
             this.labelNanometer.AutoSize = true;
-            this.labelNanometer.Location = new System.Drawing.Point(656, 17);
+            this.labelNanometer.Location = new System.Drawing.Point(600, 17);
             this.labelNanometer.Name = "labelNanometer";
             this.labelNanometer.Size = new System.Drawing.Size(90, 20);
             this.labelNanometer.TabIndex = 33;
@@ -790,6 +835,385 @@ namespace UnitConverterUI {
             this.labelDistanceUnit.TabIndex = 30;
             this.labelDistanceUnit.Text = "Unit";
             // 
+            // tabMass
+            // 
+            this.tabMass.Controls.Add(this.textBoxUSTon);
+            this.tabMass.Controls.Add(this.labelUSTon);
+            this.tabMass.Controls.Add(this.textBoxUKTon);
+            this.tabMass.Controls.Add(this.labelUKTon);
+            this.tabMass.Controls.Add(this.textBoxStone);
+            this.tabMass.Controls.Add(this.textBoxPound);
+            this.tabMass.Controls.Add(this.textBoxOunce);
+            this.tabMass.Controls.Add(this.labelStone);
+            this.tabMass.Controls.Add(this.labelPound);
+            this.tabMass.Controls.Add(this.labelOunce);
+            this.tabMass.Controls.Add(this.labelOunceIn);
+            this.tabMass.Controls.Add(this.labelPoundIn);
+            this.tabMass.Controls.Add(this.textBoxOunceIn);
+            this.tabMass.Controls.Add(this.textBoxTonne);
+            this.tabMass.Controls.Add(this.labelTonne);
+            this.tabMass.Controls.Add(this.textBoxKilogram);
+            this.tabMass.Controls.Add(this.textBoxGram);
+            this.tabMass.Controls.Add(this.textBoxMilligram);
+            this.tabMass.Controls.Add(this.textBoxMassInput);
+            this.tabMass.Controls.Add(this.buttonConvertMass);
+            this.tabMass.Controls.Add(this.labelKilogram);
+            this.tabMass.Controls.Add(this.labelGram);
+            this.tabMass.Controls.Add(this.labelMilligram);
+            this.tabMass.Controls.Add(this.labelMassInput);
+            this.tabMass.Controls.Add(this.comboBoxMassUnit);
+            this.tabMass.Controls.Add(this.labelMassUnit);
+            this.tabMass.Location = new System.Drawing.Point(4, 29);
+            this.tabMass.Name = "tabMass";
+            this.tabMass.Padding = new System.Windows.Forms.Padding(3);
+            this.tabMass.Size = new System.Drawing.Size(1488, 800);
+            this.tabMass.TabIndex = 3;
+            this.tabMass.Text = "Mass";
+            this.tabMass.UseVisualStyleBackColor = true;
+            // 
+            // textBoxUSTon
+            // 
+            this.textBoxUSTon.Location = new System.Drawing.Point(879, 252);
+            this.textBoxUSTon.Name = "textBoxUSTon";
+            this.textBoxUSTon.Size = new System.Drawing.Size(125, 27);
+            this.textBoxUSTon.TabIndex = 107;
+            // 
+            // labelUSTon
+            // 
+            this.labelUSTon.AutoSize = true;
+            this.labelUSTon.Location = new System.Drawing.Point(879, 229);
+            this.labelUSTon.Name = "labelUSTon";
+            this.labelUSTon.Size = new System.Drawing.Size(55, 20);
+            this.labelUSTon.TabIndex = 106;
+            this.labelUSTon.Text = "US Ton";
+            // 
+            // textBoxUKTon
+            // 
+            this.textBoxUKTon.Location = new System.Drawing.Point(879, 326);
+            this.textBoxUKTon.Name = "textBoxUKTon";
+            this.textBoxUKTon.Size = new System.Drawing.Size(125, 27);
+            this.textBoxUKTon.TabIndex = 100;
+            // 
+            // labelUKTon
+            // 
+            this.labelUKTon.AutoSize = true;
+            this.labelUKTon.Location = new System.Drawing.Point(879, 304);
+            this.labelUKTon.Name = "labelUKTon";
+            this.labelUKTon.Size = new System.Drawing.Size(56, 20);
+            this.labelUKTon.TabIndex = 98;
+            this.labelUKTon.Text = "UK Ton";
+            // 
+            // textBoxStone
+            // 
+            this.textBoxStone.Location = new System.Drawing.Point(879, 180);
+            this.textBoxStone.Name = "textBoxStone";
+            this.textBoxStone.Size = new System.Drawing.Size(125, 27);
+            this.textBoxStone.TabIndex = 97;
+            // 
+            // textBoxPound
+            // 
+            this.textBoxPound.Location = new System.Drawing.Point(879, 106);
+            this.textBoxPound.Name = "textBoxPound";
+            this.textBoxPound.Size = new System.Drawing.Size(125, 27);
+            this.textBoxPound.TabIndex = 96;
+            // 
+            // textBoxOunce
+            // 
+            this.textBoxOunce.Location = new System.Drawing.Point(879, 35);
+            this.textBoxOunce.Name = "textBoxOunce";
+            this.textBoxOunce.Size = new System.Drawing.Size(125, 27);
+            this.textBoxOunce.TabIndex = 95;
+            // 
+            // labelStone
+            // 
+            this.labelStone.AutoSize = true;
+            this.labelStone.Location = new System.Drawing.Point(879, 157);
+            this.labelStone.Name = "labelStone";
+            this.labelStone.Size = new System.Drawing.Size(47, 20);
+            this.labelStone.TabIndex = 94;
+            this.labelStone.Text = "Stone";
+            // 
+            // labelPound
+            // 
+            this.labelPound.AutoSize = true;
+            this.labelPound.Location = new System.Drawing.Point(879, 83);
+            this.labelPound.Name = "labelPound";
+            this.labelPound.Size = new System.Drawing.Size(56, 20);
+            this.labelPound.TabIndex = 93;
+            this.labelPound.Text = "Pounds";
+            // 
+            // labelOunce
+            // 
+            this.labelOunce.AutoSize = true;
+            this.labelOunce.Location = new System.Drawing.Point(879, 13);
+            this.labelOunce.Name = "labelOunce";
+            this.labelOunce.Size = new System.Drawing.Size(57, 20);
+            this.labelOunce.TabIndex = 92;
+            this.labelOunce.Text = "Ounces";
+            // 
+            // labelOunceIn
+            // 
+            this.labelOunceIn.AutoSize = true;
+            this.labelOunceIn.Location = new System.Drawing.Point(332, 65);
+            this.labelOunceIn.Name = "labelOunceIn";
+            this.labelOunceIn.Size = new System.Drawing.Size(57, 20);
+            this.labelOunceIn.TabIndex = 91;
+            this.labelOunceIn.Text = "Ounces";
+            // 
+            // labelPoundIn
+            // 
+            this.labelPoundIn.AutoSize = true;
+            this.labelPoundIn.Location = new System.Drawing.Point(201, 65);
+            this.labelPoundIn.Name = "labelPoundIn";
+            this.labelPoundIn.Size = new System.Drawing.Size(56, 20);
+            this.labelPoundIn.TabIndex = 90;
+            this.labelPoundIn.Text = "Pounds";
+            // 
+            // textBoxOunceIn
+            // 
+            this.textBoxOunceIn.Location = new System.Drawing.Point(332, 35);
+            this.textBoxOunceIn.Name = "textBoxOunceIn";
+            this.textBoxOunceIn.Size = new System.Drawing.Size(125, 27);
+            this.textBoxOunceIn.TabIndex = 89;
+            // 
+            // textBoxTonne
+            // 
+            this.textBoxTonne.Location = new System.Drawing.Point(593, 252);
+            this.textBoxTonne.Name = "textBoxTonne";
+            this.textBoxTonne.Size = new System.Drawing.Size(206, 27);
+            this.textBoxTonne.TabIndex = 84;
+            // 
+            // labelTonne
+            // 
+            this.labelTonne.AutoSize = true;
+            this.labelTonne.Location = new System.Drawing.Point(593, 230);
+            this.labelTonne.Name = "labelTonne";
+            this.labelTonne.Size = new System.Drawing.Size(49, 20);
+            this.labelTonne.TabIndex = 81;
+            this.labelTonne.Text = "Tonne";
+            // 
+            // textBoxKilogram
+            // 
+            this.textBoxKilogram.Location = new System.Drawing.Point(593, 180);
+            this.textBoxKilogram.Name = "textBoxKilogram";
+            this.textBoxKilogram.Size = new System.Drawing.Size(206, 27);
+            this.textBoxKilogram.TabIndex = 80;
+            // 
+            // textBoxGram
+            // 
+            this.textBoxGram.Location = new System.Drawing.Point(593, 106);
+            this.textBoxGram.Name = "textBoxGram";
+            this.textBoxGram.Size = new System.Drawing.Size(206, 27);
+            this.textBoxGram.TabIndex = 79;
+            // 
+            // textBoxMilligram
+            // 
+            this.textBoxMilligram.Location = new System.Drawing.Point(593, 35);
+            this.textBoxMilligram.Name = "textBoxMilligram";
+            this.textBoxMilligram.Size = new System.Drawing.Size(206, 27);
+            this.textBoxMilligram.TabIndex = 78;
+            // 
+            // textBoxMassInput
+            // 
+            this.textBoxMassInput.Location = new System.Drawing.Point(201, 35);
+            this.textBoxMassInput.Name = "textBoxMassInput";
+            this.textBoxMassInput.Size = new System.Drawing.Size(125, 27);
+            this.textBoxMassInput.TabIndex = 77;
+            // 
+            // buttonConvertMass
+            // 
+            this.buttonConvertMass.Location = new System.Drawing.Point(477, 34);
+            this.buttonConvertMass.Name = "buttonConvertMass";
+            this.buttonConvertMass.Size = new System.Drawing.Size(94, 29);
+            this.buttonConvertMass.TabIndex = 76;
+            this.buttonConvertMass.Text = "Convert";
+            this.buttonConvertMass.UseVisualStyleBackColor = true;
+            this.buttonConvertMass.Click += new System.EventHandler(this.buttonConvertMass_Click);
+            // 
+            // labelKilogram
+            // 
+            this.labelKilogram.AutoSize = true;
+            this.labelKilogram.Location = new System.Drawing.Point(593, 157);
+            this.labelKilogram.Name = "labelKilogram";
+            this.labelKilogram.Size = new System.Drawing.Size(76, 20);
+            this.labelKilogram.TabIndex = 75;
+            this.labelKilogram.Text = "Kilograms";
+            // 
+            // labelGram
+            // 
+            this.labelGram.AutoSize = true;
+            this.labelGram.Location = new System.Drawing.Point(593, 83);
+            this.labelGram.Name = "labelGram";
+            this.labelGram.Size = new System.Drawing.Size(51, 20);
+            this.labelGram.TabIndex = 74;
+            this.labelGram.Text = "Grams";
+            // 
+            // labelMilligram
+            // 
+            this.labelMilligram.AutoSize = true;
+            this.labelMilligram.Location = new System.Drawing.Point(593, 13);
+            this.labelMilligram.Name = "labelMilligram";
+            this.labelMilligram.Size = new System.Drawing.Size(79, 20);
+            this.labelMilligram.TabIndex = 73;
+            this.labelMilligram.Text = "Milligrams";
+            // 
+            // labelMassInput
+            // 
+            this.labelMassInput.AutoSize = true;
+            this.labelMassInput.Location = new System.Drawing.Point(201, 11);
+            this.labelMassInput.Name = "labelMassInput";
+            this.labelMassInput.Size = new System.Drawing.Size(45, 20);
+            this.labelMassInput.TabIndex = 72;
+            this.labelMassInput.Text = "Value";
+            // 
+            // comboBoxMassUnit
+            // 
+            this.comboBoxMassUnit.FormattingEnabled = true;
+            this.comboBoxMassUnit.Location = new System.Drawing.Point(15, 34);
+            this.comboBoxMassUnit.Name = "comboBoxMassUnit";
+            this.comboBoxMassUnit.Size = new System.Drawing.Size(151, 28);
+            this.comboBoxMassUnit.TabIndex = 71;
+            this.comboBoxMassUnit.SelectedIndexChanged += new System.EventHandler(this.comboBoxMassUnit_SelectedIndexChanged);
+            // 
+            // labelMassUnit
+            // 
+            this.labelMassUnit.AutoSize = true;
+            this.labelMassUnit.Location = new System.Drawing.Point(15, 11);
+            this.labelMassUnit.Name = "labelMassUnit";
+            this.labelMassUnit.Size = new System.Drawing.Size(36, 20);
+            this.labelMassUnit.TabIndex = 70;
+            this.labelMassUnit.Text = "Unit";
+            // 
+            // tabSpeed
+            // 
+            this.tabSpeed.Controls.Add(this.textBoxKnot);
+            this.tabSpeed.Controls.Add(this.labelKnot);
+            this.tabSpeed.Controls.Add(this.textBoxMPH);
+            this.tabSpeed.Controls.Add(this.textBoxMPS);
+            this.tabSpeed.Controls.Add(this.textBoxKPH);
+            this.tabSpeed.Controls.Add(this.textBoxSpeedInput);
+            this.tabSpeed.Controls.Add(this.comboBoxSpeedUnit);
+            this.tabSpeed.Controls.Add(this.buttonConvertSpeed);
+            this.tabSpeed.Controls.Add(this.labelMPH);
+            this.tabSpeed.Controls.Add(this.labelMPS);
+            this.tabSpeed.Controls.Add(this.labelKPH);
+            this.tabSpeed.Controls.Add(this.labelSpeedValue);
+            this.tabSpeed.Controls.Add(this.labelSpeedUnit);
+            this.tabSpeed.Location = new System.Drawing.Point(4, 29);
+            this.tabSpeed.Name = "tabSpeed";
+            this.tabSpeed.Padding = new System.Windows.Forms.Padding(3);
+            this.tabSpeed.Size = new System.Drawing.Size(1488, 800);
+            this.tabSpeed.TabIndex = 4;
+            this.tabSpeed.Text = "Speed";
+            this.tabSpeed.UseVisualStyleBackColor = true;
+            // 
+            // textBoxKnot
+            // 
+            this.textBoxKnot.Location = new System.Drawing.Point(638, 251);
+            this.textBoxKnot.Name = "textBoxKnot";
+            this.textBoxKnot.Size = new System.Drawing.Size(125, 27);
+            this.textBoxKnot.TabIndex = 23;
+            // 
+            // labelKnot
+            // 
+            this.labelKnot.AutoSize = true;
+            this.labelKnot.Location = new System.Drawing.Point(638, 228);
+            this.labelKnot.Name = "labelKnot";
+            this.labelKnot.Size = new System.Drawing.Size(46, 20);
+            this.labelKnot.TabIndex = 22;
+            this.labelKnot.Text = "Knots";
+            // 
+            // textBoxMPH
+            // 
+            this.textBoxMPH.Location = new System.Drawing.Point(638, 180);
+            this.textBoxMPH.Name = "textBoxMPH";
+            this.textBoxMPH.Size = new System.Drawing.Size(125, 27);
+            this.textBoxMPH.TabIndex = 21;
+            // 
+            // textBoxMPS
+            // 
+            this.textBoxMPS.Location = new System.Drawing.Point(638, 106);
+            this.textBoxMPS.Name = "textBoxMPS";
+            this.textBoxMPS.Size = new System.Drawing.Size(125, 27);
+            this.textBoxMPS.TabIndex = 20;
+            // 
+            // textBoxKPH
+            // 
+            this.textBoxKPH.Location = new System.Drawing.Point(638, 35);
+            this.textBoxKPH.Name = "textBoxKPH";
+            this.textBoxKPH.Size = new System.Drawing.Size(125, 27);
+            this.textBoxKPH.TabIndex = 19;
+            // 
+            // textBoxSpeedInput
+            // 
+            this.textBoxSpeedInput.Location = new System.Drawing.Point(249, 37);
+            this.textBoxSpeedInput.Name = "textBoxSpeedInput";
+            this.textBoxSpeedInput.Size = new System.Drawing.Size(125, 27);
+            this.textBoxSpeedInput.TabIndex = 18;
+            // 
+            // comboBoxSpeedUnit
+            // 
+            this.comboBoxSpeedUnit.FormattingEnabled = true;
+            this.comboBoxSpeedUnit.Location = new System.Drawing.Point(19, 36);
+            this.comboBoxSpeedUnit.Name = "comboBoxSpeedUnit";
+            this.comboBoxSpeedUnit.Size = new System.Drawing.Size(151, 28);
+            this.comboBoxSpeedUnit.TabIndex = 17;
+            // 
+            // buttonConvertSpeed
+            // 
+            this.buttonConvertSpeed.Location = new System.Drawing.Point(440, 35);
+            this.buttonConvertSpeed.Name = "buttonConvertSpeed";
+            this.buttonConvertSpeed.Size = new System.Drawing.Size(94, 29);
+            this.buttonConvertSpeed.TabIndex = 16;
+            this.buttonConvertSpeed.Text = "Convert";
+            this.buttonConvertSpeed.UseVisualStyleBackColor = true;
+            this.buttonConvertSpeed.Click += new System.EventHandler(this.buttonConvertSpeed_Click);
+            // 
+            // labelMPH
+            // 
+            this.labelMPH.AutoSize = true;
+            this.labelMPH.Location = new System.Drawing.Point(638, 157);
+            this.labelMPH.Name = "labelMPH";
+            this.labelMPH.Size = new System.Drawing.Size(105, 20);
+            this.labelMPH.TabIndex = 15;
+            this.labelMPH.Text = "Miles Per Hour";
+            // 
+            // labelMPS
+            // 
+            this.labelMPS.AutoSize = true;
+            this.labelMPS.Location = new System.Drawing.Point(638, 83);
+            this.labelMPS.Name = "labelMPS";
+            this.labelMPS.Size = new System.Drawing.Size(131, 20);
+            this.labelMPS.TabIndex = 14;
+            this.labelMPS.Text = "Meters per second";
+            // 
+            // labelKPH
+            // 
+            this.labelKPH.AutoSize = true;
+            this.labelKPH.Location = new System.Drawing.Point(638, 13);
+            this.labelKPH.Name = "labelKPH";
+            this.labelKPH.Size = new System.Drawing.Size(140, 20);
+            this.labelKPH.TabIndex = 13;
+            this.labelKPH.Text = "Kilometers per hour";
+            // 
+            // labelSpeedValue
+            // 
+            this.labelSpeedValue.AutoSize = true;
+            this.labelSpeedValue.Location = new System.Drawing.Point(249, 13);
+            this.labelSpeedValue.Name = "labelSpeedValue";
+            this.labelSpeedValue.Size = new System.Drawing.Size(45, 20);
+            this.labelSpeedValue.TabIndex = 12;
+            this.labelSpeedValue.Text = "Value";
+            // 
+            // labelSpeedUnit
+            // 
+            this.labelSpeedUnit.AutoSize = true;
+            this.labelSpeedUnit.Location = new System.Drawing.Point(19, 13);
+            this.labelSpeedUnit.Name = "labelSpeedUnit";
+            this.labelSpeedUnit.Size = new System.Drawing.Size(36, 20);
+            this.labelSpeedUnit.TabIndex = 11;
+            this.labelSpeedUnit.Text = "Unit";
+            // 
             // UnitConverter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -805,6 +1229,10 @@ namespace UnitConverterUI {
             this.tabTime.PerformLayout();
             this.tabDistance.ResumeLayout(false);
             this.tabDistance.PerformLayout();
+            this.tabMass.ResumeLayout(false);
+            this.tabMass.PerformLayout();
+            this.tabSpeed.ResumeLayout(false);
+            this.tabSpeed.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -885,5 +1313,46 @@ namespace UnitConverterUI {
         private Label labelMil;
         private TextBox textBoxFeet;
         private Label labelFeet;
+        private TabPage tabMass;
+        private TextBox textBoxUSTon;
+        private Label labelUSTon;
+        private TextBox textBoxUKTon;
+        private Label labelUKTon;
+        private TextBox textBoxStone;
+        private TextBox textBoxPound;
+        private TextBox textBoxOunce;
+        private Label labelStone;
+        private Label labelPound;
+        private Label labelOunce;
+        private Label labelOunceIn;
+        private Label labelPoundIn;
+        private TextBox textBoxOunceIn;
+        private TextBox textBoxTonne;
+        private Label labelTonne;
+        private TextBox textBoxKilogram;
+        private TextBox textBoxGram;
+        private TextBox textBoxMilligram;
+        private TextBox textBoxMassInput;
+        private Button buttonConvertMass;
+        private Label labelKilogram;
+        private Label labelGram;
+        private Label labelMilligram;
+        private Label labelMassInput;
+        private ComboBox comboBoxMassUnit;
+        private Label labelMassUnit;
+        private TabPage tabSpeed;
+        private TextBox textBoxKnot;
+        private Label labelKnot;
+        private TextBox textBoxMPH;
+        private TextBox textBoxMPS;
+        private TextBox textBoxKPH;
+        private TextBox textBoxSpeedInput;
+        private ComboBox comboBoxSpeedUnit;
+        private Button buttonConvertSpeed;
+        private Label labelMPH;
+        private Label labelMPS;
+        private Label labelKPH;
+        private Label labelSpeedValue;
+        private Label labelSpeedUnit;
     }
 }

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseUnitLibrary", "BaseUnitLibrary\BaseUnitLibrary.csproj", "{1872F303-2EA6-4201-BBE9-C08479B45BDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitLibrary", "BaseUnitLibrary\UnitLibrary.csproj", "{1872F303-2EA6-4201-BBE9-C08479B45BDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitConverterUI", "UnitConverterUI\UnitConverterUI.csproj", "{E1A955FC-763C-4B85-9218-FEE9614854A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitConverterUI", "UnitConverterUI\UnitConverterUI.csproj", "{E1A955FC-763C-4B85-9218-FEE9614854A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

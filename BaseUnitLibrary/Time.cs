@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseUnitLibrary {
+namespace UnitLibrary {
     public class Time {
         // Members
         private double _seconds;
@@ -20,6 +20,11 @@ namespace BaseUnitLibrary {
         public double Years { get => SecondsYear(_seconds); }
 
         // Constructor
+        /// <summary>
+        /// Constructor for Time class
+        /// </summary>
+        /// <param name="input">Value of unit to be converted</param>
+        /// <param name="unit">Unit of value to be converted</param>
         public Time(double input, TimeUnits unit) {
             switch (unit) {
                 case TimeUnits.Nanoseconds:

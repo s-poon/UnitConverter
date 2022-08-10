@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseUnitLibrary {
+namespace UnitLibrary {
     public class Distance {
         // Members
         private double _meters;
@@ -21,9 +21,9 @@ namespace BaseUnitLibrary {
         public double Lightyears { get => _meters / 9460730472580800; }
         public double Mils { get => MetersToThou(_meters); }
         public double Inches { get => MetersToInch(_meters); }
-        public double FootInch { get; }
+        public double FootInch { get => _inches; }
         public double Feet { get => MetersToFeet(_meters); }
-        public int WholeFeet { get => 4; }
+        public int WholeFeet { get => _feet; }
         public double Yards { get => MetersToYard(_meters); }
         public int WholeYards { get => 1; }
         public double Miles { get => MetersToMile(_meters); }
@@ -51,7 +51,7 @@ namespace BaseUnitLibrary {
                 case DistanceUnits.Kilometers:
                     _meters = Prefix.KiloTo(input);
                     break;
-                case DistanceUnits.LightYear:
+                case DistanceUnits.LightYears:
                     _meters = LightYearToMeters(input);
                     break;
                 case DistanceUnits.Thou:
@@ -62,20 +62,20 @@ namespace BaseUnitLibrary {
                     break;
                 case DistanceUnits.Feet:
                     _meters = FeetToMeters(input);
-                    _inches = input * 12;
                     break;
-                case DistanceUnits.Yard:
+                case DistanceUnits.Yards:
                     _meters = YardToMeters(input);
                     break;
-                case DistanceUnits.Mile:
+                case DistanceUnits.Miles:
                     _meters = MileToMeters(input);
                     break;
-                case DistanceUnits.NauticalMile:
+                case DistanceUnits.NauticalMiles:
                     _meters = NauticalToMeters(input);
                     break;
                 default:
                     break;
             }
+            MetersToWholeFeet();
         }
 
         // Methods
@@ -92,10 +92,9 @@ namespace BaseUnitLibrary {
         private double MetersToYard(double meter) { return meter * 1.094; }
         private double MetersToMile(double meter) { return meter / 1609.34; }
         private double MetersToNautical(double meter) { return meter / 1852; }
-        private double MetersToWholeFeet(double meter) {
-            _feet = (int)_inches / 12;
-            _inches = _inches % 12;
-            return 1;
+        private void MetersToWholeFeet() {
+            _feet = (int)Feet;
+            _inches = Inches % 12;
         }
         
 
@@ -107,13 +106,13 @@ namespace BaseUnitLibrary {
             Centimeters,
             Meters,
             Kilometers,
-            LightYear,
+            LightYears,
             Thou,
             Inches,
             Feet,
-            Yard,
-            Mile,
-            NauticalMile
+            Yards,
+            Miles,
+            NauticalMiles
         }
     }
 }

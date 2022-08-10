@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BaseUnitLibrary\BaseUnitLibrary.csproj" />
+    <ProjectReference Include="..\BaseUnitLibrary\UnitLibrary.csproj" />
   </ItemGroup>
 
 </Project>

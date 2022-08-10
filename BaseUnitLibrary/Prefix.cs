@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaseUnitLibrary {
+namespace UnitLibrary {
     public static class Prefix {
         public static double NanoTo(double nano) { return nano / 1e9; }
         public static double MicroTo(double micro) { return micro / 1e6; }
